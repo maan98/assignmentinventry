@@ -1,0 +1,5 @@
+package com.dxc.producer.controller;
+
+public class InventoryController {
+
+}

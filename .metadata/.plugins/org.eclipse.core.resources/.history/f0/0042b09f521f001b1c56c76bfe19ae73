@@ -1,0 +1,13 @@
+package com.dxc.producer.service;
+
+import java.util.List;
+
+import com.dxc.producer.model.Item;
+
+public interface InventoryService {
+
+	public List<Item> getAllItem();
+
+	public Item getItemById(int id);
+
+}

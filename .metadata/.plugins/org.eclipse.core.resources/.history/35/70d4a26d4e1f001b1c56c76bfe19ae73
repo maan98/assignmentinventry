@@ -1,0 +1,8 @@
+package com.dxc.consumer.service;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient(name="invantory")
+public interface OrderService {
+
+}

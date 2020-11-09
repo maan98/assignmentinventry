@@ -1,0 +1,5 @@
+package com.dxc.producer.model;
+
+public class Item {
+
+}

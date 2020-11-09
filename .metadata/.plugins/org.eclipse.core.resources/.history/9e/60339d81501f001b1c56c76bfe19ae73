@@ -1,0 +1,27 @@
+package com.dxc.producer.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.dxc.producer.model.Item;
+import com.dxc.producer.service.InventoryService;
+
+@RestController
+public class InventoryController {
+	
+	@Autowired
+	InventoryService service;
+	@GetMapping("/items")
+	public List<Item> getAllItem(){
+		return service.getAllItem();
+	}
+	@GetMapping("/items/{id}")
+	public Item getItemById(@PathVariable int id) {
+		return service.getItemById(id);
+	}
+
+}

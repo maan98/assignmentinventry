@@ -1,0 +1,14 @@
+package com.dxc.consumer.service;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.dxc.consumer.model.Item;
+
+@FeignClient(name="invantory")
+public interface OrderService {
+	
+	@GetMapping("/items")
+	public Item getData();
+
+}

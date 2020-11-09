@@ -1,0 +1,5 @@
+package com.dxc.producer.service;
+
+public class InventoryServiceImp {
+
+}
